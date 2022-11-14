@@ -1,13 +1,30 @@
 import 'package:flutter/material.dart';
 
+import '../../main.dart';
+
 class Home05 extends StatelessWidget {
   const Home05({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Sesion 05'),
-      centerTitle: true,
+      appBar: AppBar(
+        centerTitle: true,
+        title: SizedBox(
+            child: Image.network(
+              'https://mir-s3-cdn-cf.behance.net/projects/404/c697f587154819.Y3JvcCwxMzc2LDEwNzcsMjY1LDA.png',
+            )),
+        elevation: 20,
+        leading: IconButton(
+          icon: const Icon(Icons.home),
+          tooltip: 'Menu',
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(
+                  builder: (context)=> const MyApp(),
+                  ),);
+          },
+        ),
+      backgroundColor: const Color.fromARGB(255, 35, 5, 85).withOpacity(0.8)
       ),
       body: Container(
          decoration: const BoxDecoration(

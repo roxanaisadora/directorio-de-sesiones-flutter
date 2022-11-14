@@ -11,13 +11,15 @@ class Menu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('sesiones'),
+        title: const Text('Sesiones de la unidad 02'),
         centerTitle: true,
         elevation: 0,
+        backgroundColor: const Color.fromARGB(255, 35, 5, 85).withOpacity(0.8)
         ),
         body: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: const EdgeInsets.all(40.0),
           child:Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             ButtonWidget(
               text:'sesion 03',

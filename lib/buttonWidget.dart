@@ -11,7 +11,9 @@ class ButtonWidget extends StatelessWidget {
       height: 50,
       minWidth: double.infinity,
       elevation: 1,
-      color: const Color.fromARGB(255, 6, 8,125),
+      color: Color.fromARGB(255, 198, 48, 56),
+      shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10)),
       child:Text(
         text!,
         style: const TextStyle(color: Colors.white, fontSize: 18),

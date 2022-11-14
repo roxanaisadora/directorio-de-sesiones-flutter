@@ -94,10 +94,34 @@ class _ScrollWidgetState extends State<ScrollWidget> {
               },
               ),
           ),
-          
+           if (isLoading)
+                Positioned(
+                    bottom: 40,
+                    left: size.width * 0.5 - 30,
+                    child: const LodingIcono())
       ],
       ),
       )
+    );
+  }
+}
+
+class LodingIcono extends StatelessWidget {
+  const LodingIcono({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(10),
+      height: 60,
+      width: 60,
+      decoration: BoxDecoration(
+        color: Colors.white.withOpacity(0.9),
+        shape: BoxShape.circle,
+      ),
+      child: const CircularProgressIndicator(
+        color: Colors.amber,
+      ),
     );
   }
 }

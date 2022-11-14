@@ -5,6 +5,10 @@ import 'package:sesion_03/pages/sesion_04/register.dart';
 import 'package:sesion_03/pages/sesion_04/checkbox.dart';
 import 'package:sesion_03/pages/sesion_04/scroll.dart';
 
+import 'Dropdownbuttonformfiel.dart';
+import 'EmailPassWidget.dart';
+import 'SliderWidget.dart';
+
 class Home04 extends StatelessWidget {
   const Home04({super.key});
 
@@ -31,12 +35,37 @@ class Home04 extends StatelessWidget {
        body: Padding(
         padding: const EdgeInsets.all(10.0),
         child:Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             ButtonWidget(
-              text:'Registro',
+              text:'Texfield',
               onPressed:(){
                 Navigator.push(context, MaterialPageRoute(
-                  builder: (context)=> const Register(),
+                  builder: (context)=> const TextFormFieldWidget(),
+                  ),);
+              },
+            ),
+            ButtonWidget(
+              text:'Email & Password',
+              onPressed:(){
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context)=> const EmailPassWidget(),
+                  ),);
+              },
+            ),
+            ButtonWidget(
+              text:'DrowDownButton',
+              onPressed:(){
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context)=> const Dropdownbuttonformfiel(),
+                  ),);
+              },
+            ),
+            ButtonWidget(
+              text:'Slider',
+              onPressed:(){
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context)=> const SliderWidget(),
                   ),);
               },
             ),
@@ -44,7 +73,7 @@ class Home04 extends StatelessWidget {
               text:'checkbox',
               onPressed:(){
                 Navigator.push(context, MaterialPageRoute(
-                  builder: (context)=> const SwitchExample(),
+                  builder: (context)=> const CheboxSwitchWidget(),
                   ),);
               },
             ),
