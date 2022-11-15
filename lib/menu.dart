@@ -3,6 +3,7 @@ import 'package:sesion_03/pages/sesion_03/home.dart';
 import 'package:sesion_03/pages/sesion_04/inicio04.dart';
 import 'buttonWidget.dart';
 import 'pages/sesion_05/home05.dart';
+import 'pages/sesion_06/screen/home06.dart';
 
 class Menu extends StatelessWidget {
   const Menu({super.key});
@@ -42,6 +43,14 @@ class Menu extends StatelessWidget {
               onPressed:(){
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context)=> const Home05(),
+                  ),);
+              },
+            ),
+            ButtonWidget(
+              text:'sesion 06',
+              onPressed:(){
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context)=> const Home06(),
                   ),);
               },
             ),
