@@ -19,9 +19,9 @@ class ChallengeWidget04 extends StatelessWidget {
                 children: <Widget>[
                   const SizedBox(height: 20,),
                   const Text('Contact us',
-                      style: TextStyle(color: Colors.black, fontSize: 30)),
+                      style: TextStyle(color: Color.fromARGB(255, 44, 47, 236), fontSize: 35, fontWeight: FontWeight.bold,)),
                   const SizedBox(height: 15,),
-                  Text('Travel round America\'s  big hearted, musically influenced southern cities of America.', textDirection: TextDirection.ltr, style:GoogleFonts.ubuntu(fontSize: 15)),
+                  Text('Travel round America\'s  big hearted, musically influenced southern cities of America.', textDirection: TextDirection.ltr, style:GoogleFonts.ubuntu(fontSize: 15),textAlign:TextAlign.justify),
                   const SizedBox(height: 40,),
                     Container(
                       height: 140,

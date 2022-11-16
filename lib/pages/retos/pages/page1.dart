@@ -15,27 +15,26 @@ class ChallengeWidget01 extends StatelessWidget {
               child: Padding(padding:const EdgeInsets.only(top: 20, left: 25, right: 25, bottom: 10),
                child:Column(
                 children: <Widget>[
-                  const SizedBox(height: 20,),
+                  const SizedBox(height: 30,),
                   Row(
                     children: [
-                      Text('1', textDirection: TextDirection.ltr, style:GoogleFonts.ubuntu(fontSize: 100, fontWeight: FontWeight.bold)),
-                      Text('_____', textDirection: TextDirection.ltr, style:GoogleFonts.ubuntu(fontSize: 80, fontWeight: FontWeight.bold)),
+                      Text('1', textDirection: TextDirection.ltr, style:GoogleFonts.ubuntu(fontSize: 80, fontWeight: FontWeight.bold,color: const Color.fromARGB(255, 178, 178, 173))),
+                      Expanded(child: Container(color:const Color.fromARGB(255, 178, 178, 173),height: 5,))
                     ],
                   ),
-                   Padding(padding:const EdgeInsets.only(top: 20, left: 25, right: 25, bottom: 10)  ,child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
+                   Padding(padding:const EdgeInsets.only(top: 20, left: 15, right: 15, bottom: 10)  ,child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
+                      children: [
                       const Text('Introduction',
-                      style: TextStyle(color: Colors.black, fontSize: 25)),
+                      style: TextStyle(color: Color.fromARGB(255, 44, 47, 236), fontSize: 25, fontWeight: FontWeight.bold,) ),
                       const SizedBox(height: 15,),
-                      Text('Travel round America\'s  big hearted, musically influenced southern cities of America. Starting off in the country music Mecca of Nashville, you\'ll toe tap your way towards Memphis, paying homage to the King at Graceland before heading on to the life and soul of the party, New Orleans, the heart and soul of the party.', textDirection: TextDirection.ltr, style:GoogleFonts.ubuntu(fontSize: 15)),
+                      Text('Travel round America\'s  big hearted, musically influenced southern cities of America. Starting off in the country music Mecca of Nashville, you\'ll toe tap your way towards Memphis, paying homage to the King at Graceland before heading on to the life and soul of the party, New Orleans, the heart and soul of the party.', textDirection: TextDirection.ltr, style:GoogleFonts.ubuntu(fontSize: 15),
+                      textAlign:TextAlign.justify),
                       const SizedBox(height: 15,),
-                      Text('You\'ll find alligator swamps, voodoo mysteries ability to turn every single day into a life loving celebration. Sunny smiles, massive barbecues and musical legends will all ensure you leave the south with a very full heart.', textDirection: TextDirection.ltr, style:GoogleFonts.ubuntu(fontSize: 15)),
+                      Text('You\'ll find alligator swamps, voodoo mysteries ability to turn every single day into a life loving celebration. Sunny smiles, massive barbecues and musical legends will all ensure you leave the south with a very full heart.', textDirection: TextDirection.ltr, style:GoogleFonts.ubuntu(fontSize: 15),textAlign:TextAlign.justify),
                     ],
-                  )
+                      )
                   ),
-                  
                     Center(
                     child:  Column(
                     children: [
@@ -44,21 +43,21 @@ class ChallengeWidget01 extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Column( children: const[
-                          Icon(Icons.bed, color: Color.fromARGB(255, 104, 63, 240)),
+                          Icon(Icons.bed, color: Color.fromARGB(255, 44, 47, 236)),
                           Text('Hotel',
-                      style: TextStyle(color: Color.fromARGB(255, 104, 63, 240), fontSize: 18),
+                      style: TextStyle(color: Color.fromARGB(255, 44, 47, 236), fontSize: 18),
                     ),
                         ],),
                         Column( children: const[
-                          Icon(Icons.map,color: Color.fromARGB(255, 104, 63, 240) ),
+                          Icon(Icons.map,color: Color.fromARGB(255, 44, 47, 236) ),
                           Text('Guide',
-                      style: TextStyle(color: Color.fromARGB(255, 104, 63, 240), fontSize: 18),
+                      style: TextStyle(color: Color.fromARGB(255, 44, 47, 236), fontSize: 18),
                     ),
                         ],),
                         Column( children:const [
-                          Icon(Icons.restaurant_menu, color: Color.fromARGB(255, 104, 63, 240)),
+                          Icon(Icons.restaurant_menu, color: Color.fromARGB(255, 44, 47, 236)),
                           Text('Meals',
-                      style: TextStyle(color: Color.fromARGB(255, 104, 63, 240), fontSize: 18),
+                      style: TextStyle(color: Color.fromARGB(255, 44, 47, 236), fontSize: 18),
                     ),
                         ],),
                      ],),
@@ -67,21 +66,21 @@ class ChallengeWidget01 extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Column( children: const[
-                          Icon(Icons.train,color: Color.fromARGB(255, 104, 63, 240) ),
+                          Icon(Icons.train,color: Color.fromARGB(255, 44, 47, 236) ),
                           Text('Transport',
-                      style: TextStyle(color: Color.fromARGB(255, 104, 63, 240), fontSize: 17),
+                      style: TextStyle(color: Color.fromARGB(255, 44, 47, 236), fontSize: 17),
                     ),
                         ],),
                         Column( children: const[
-                          Icon(Icons.camera, color: Color.fromARGB(255, 104, 63, 240)),
+                          Icon(Icons.camera, color: Color.fromARGB(255, 44, 47, 236)),
                           Text('Photo',
-                      style: TextStyle(color: Color.fromARGB(255, 104, 63, 240), fontSize: 18),
+                      style: TextStyle(color: Color.fromARGB(255, 44, 47, 236), fontSize: 18),
                     ),
                         ],),
                         Column( children:const [
-                          Icon(Icons.health_and_safety,color: Color.fromARGB(255, 104, 63, 240) ),
+                          Icon(Icons.health_and_safety,color: Color.fromARGB(255, 44, 47, 236) ),
                           Text('covid19',
-                      style: TextStyle(color: Color.fromARGB(255, 104, 63, 240), fontSize: 18),
+                      style: TextStyle(color: Color.fromARGB(255, 44, 47, 236), fontSize: 18),
                     ),
                         ],),
                      ],),

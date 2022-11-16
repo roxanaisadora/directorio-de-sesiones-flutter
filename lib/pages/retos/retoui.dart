@@ -46,8 +46,8 @@ class ChallengeWidget extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text('Holidays in', textDirection: TextDirection.ltr, style:GoogleFonts.indieFlower(fontSize: 40, fontWeight: FontWeight.bold, color: const Color.fromARGB(255, 33, 37, 243))),
-                          Text('New-York', textDirection: TextDirection.ltr, style:GoogleFonts.indieFlower(fontSize: 40, fontWeight: FontWeight.bold, color:const Color.fromARGB(255, 33, 37, 243))),
+                          Text('Holidays in', textDirection: TextDirection.ltr, style:GoogleFonts.notoSans(fontSize: 40, fontWeight: FontWeight.bold, color: const Color.fromARGB(255, 33, 37, 243))),
+                          Text('New-York', textDirection: TextDirection.ltr, style:GoogleFonts.notoSans(fontSize: 40, fontWeight: FontWeight.bold, color:const Color.fromARGB(255, 33, 37, 243))),
                           Text('View our tour packages today', textDirection: TextDirection.ltr, style:GoogleFonts.indieFlower(fontSize: 20, fontWeight: FontWeight.bold)),
                         ],
                     ),
