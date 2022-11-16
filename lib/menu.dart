@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sesion_03/pages/retos/retoui.dart';
 import 'package:sesion_03/pages/sesion_03/home.dart';
 import 'package:sesion_03/pages/sesion_04/inicio04.dart';
 import 'buttonWidget.dart';
@@ -51,6 +52,14 @@ class Menu extends StatelessWidget {
               onPressed:(){
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context)=> const Home06(),
+                  ),);
+              },
+            ),
+            ButtonWidget(
+              text:'Reto',
+              onPressed:(){
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context)=> const ChallengeWidget(),
                   ),);
               },
             ),
