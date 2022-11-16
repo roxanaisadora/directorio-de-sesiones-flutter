@@ -7,4 +7,5 @@
 ## Sesion 07
 ### Se uso la libreria de scroll de tiktok
  
-![sesion_07](https://user-images.githubusercontent.com/58452664/202235826-f8e553d9-e51b-4c59-bad1-1df99c3d2e09.PNG)
+
+![GIF 16-11-2022 11-15-13](https://user-images.githubusercontent.com/58452664/202236020-7a91f866-8048-45f9-ad81-3a96316e5ebb.gif)
