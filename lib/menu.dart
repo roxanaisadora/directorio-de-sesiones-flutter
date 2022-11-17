@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:sesion_03/pages/reto02/screens/pagetiktok.dart';
 import 'package:sesion_03/pages/retos/retoui.dart';
 import 'package:sesion_03/pages/sesion_03/home.dart';
 import 'package:sesion_03/pages/sesion_04/inicio04.dart';
-import 'package:sesion_03/pages/sesion_07/screens/home07.dart';
 import 'package:sesion_03/pages/sesion_07/screens/scroll07.dart';
 import 'package:sesion_03/pages/sesion_07/screens/sreen07.dart';
 import 'buttonWidget.dart';
@@ -79,10 +79,18 @@ class Menu extends StatelessWidget {
               },
             ),
             ButtonWidget(
-              text:'Reto',
+              text:'Reto 1',
               onPressed:(){
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context)=> const ChallengeWidget(),
+                  ),);
+              },
+            ),
+            ButtonWidget(
+              text:'Reto 2',
+              onPressed:(){
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context)=> const ScrollTiktok(),
                   ),);
               },
             ),
