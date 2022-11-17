@@ -9,9 +9,18 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Bienvenido al curso de Flutter',
-        home: Menu());
+        theme:ThemeData.dark(
+          useMaterial3: true
+        ).copyWith(
+          splashColor: Colors.transparent,
+          hoverColor:  Colors.transparent,
+          highlightColor:  Colors.transparent,
+          primaryColor:  Colors.black,
+          scaffoldBackgroundColor:  Colors.black
+        ),
+        home: const Menu());
   }
 }

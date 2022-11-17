@@ -72,11 +72,9 @@ class TiktokWidget extends StatelessWidget {
                             child: Container(
                               decoration:  BoxDecoration(
                               border: Border.all(width: 1, color: Colors.white),
-                              borderRadius: BorderRadius.circular(100),
-            ),
+                              borderRadius: BorderRadius.circular(100),),
                               child: ClipRRect(
                     borderRadius: BorderRadius.circular(100),
-                    
                     child:Image.network(
                       '$user',
                       width: 50,

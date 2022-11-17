@@ -5,6 +5,7 @@ import 'package:sesion_03/pages/sesion_03/home.dart';
 import 'package:sesion_03/pages/sesion_04/inicio04.dart';
 import 'package:sesion_03/pages/sesion_07/screens/scroll07.dart';
 import 'package:sesion_03/pages/sesion_07/screens/sreen07.dart';
+import 'package:sesion_03/pages/sesion_08/screeans/home08.dart';
 import 'buttonWidget.dart';
 import 'pages/sesion_05/home05.dart';
 import 'pages/sesion_06/screen/home06.dart';
@@ -75,6 +76,14 @@ class Menu extends StatelessWidget {
               onPressed:(){
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context)=> const ScrollScrean07(),
+                  ),);
+              },
+            ),
+            ButtonWidget(
+              text:'Sesion08',
+              onPressed:(){
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context)=> const Home08(),
                   ),);
               },
             ),
